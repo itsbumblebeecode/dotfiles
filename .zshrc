@@ -101,3 +101,5 @@ export COLORTERM=truecolor
 # Example aliases
 alias zshconfig="nvim $HOME/.config/.zshrc"
 alias ohmyzsh="nvim $HOME/.config/.oh-my-zsh"
+alias nv="nvim"
+alias fs="ranger"
