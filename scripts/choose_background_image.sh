@@ -1,10 +1,10 @@
+#!/bin/bash
+
 wallpapers_dir="$HOME/.config/wallpapers"
 
-shopt -s nullglob
+setopt nullglob
 
 files=("$HOME/.config/wallpapers"/*.{jpg,jpeg,png})
-
-shopt -s nullglob
 
 if [ ${#files[@]} -gt 0 ]; then
     random_image=$(printf "%s\n" "${files[@]}" | awk 'BEGIN{srand()} {print rand(), $0}' | sort -n | head -n 1 | cut -d' ' -f2-)
