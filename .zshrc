@@ -105,4 +105,7 @@ source $HOME/.config/scripts/boot.sh
 alias zshconfig="nvim $HOME/.config/.zshrc"
 alias ohmyzsh="nvim $HOME/.config/.oh-my-zsh"
 alias nv="nvim"
+alias yt='yt-dlp -o "%(title)s.%(ext)s"'
+alias ytdlp='yt-dlp'
+alias ytm='yt-dlp -x --audio-format wav -f "bestaudio" -o "%(title)s.%(ext)s"'
 alias fs="ranger"
